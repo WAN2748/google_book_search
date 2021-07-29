@@ -1,5 +1,5 @@
 import React from "react";
-import "../../components/Form/style.css"
+
 
 export function Input(props) {
   return (

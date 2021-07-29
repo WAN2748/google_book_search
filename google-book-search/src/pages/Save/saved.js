@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Jumbotron from "../../components/Jumbotron";
+import Jumbotron from "../../componets/Jumbotron";
 import API from "../../utils/API";
-import { Col, Row, Container } from "../../components/Grid";
-import { List, ListItem } from "../../components/List";
-import CardBody from "../../components/cardBody/cardBody";
-import Card from "../../components/Card/card";
-import DeleteBtn from "../../components/DeleteBtn/deleteBtn"
-import ViewBtn from "../../components/viewBtn/viewBtn"
+import { Col, Row, Container } from "../../componets/Grid";
+import { List, ListItem } from "../../componets/List";
+import CardBody from "../../componets/CardBody/cardBody";
+import Card from "../../componets/Card/card";
+import DeleteBtn from "../../componets/DeleteBtn/deleteBtn"
+import ViewBtn from "../../componets/ViewBtn/viewBtn"
 
 function Search() {
   const [books, setBooks] = useState([])
@@ -32,7 +32,7 @@ function Search() {
           <div className="hero">
             <Jumbotron>
               <h1>React Google Books Search</h1>
-              <h5>Searched & Saved Books of Interest</h5>
+              <h5>Searched & Save Books of Interest</h5>
             </Jumbotron>
           </div>
           <Col size="md-12">

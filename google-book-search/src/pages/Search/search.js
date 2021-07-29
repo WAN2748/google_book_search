@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import Jumbotron from "../../components/Jumbotron/";
+import React, { useState } from "react";
+import Jumbotron from "../../componets/Jumbotron";
 import API from "../../utils/API";
-import CardBody from "../../components/cardBody/cardBody";
-import Card from "../../components/Card/card"
-import SaveBtn from "../../components/saveBtn/saveBtn"
-import ViewBtn from "../../components/viewBtn/viewBtn"
-import { Col, Row, Container } from "../../components/Grid/";
-import { List, ListItem } from "../../components/List";
-import { Input, FormBtn } from "../../components/Form/form";
+import CardBody from "../../componets/CardBody/cardBody";
+import Card from "../../componets/Card/card"
+import SaveBtn from "../../componets/SaveBtn/saveBtn"
+import ViewBtn from "../../componets/ViewBtn/viewBtn"
+import { Col, Row, Container } from "../../componets/Grid/index";
+import { List, ListItem } from "../../componets/List";
+import { Input, FormBtn } from "../../componets/Form/form";
 
-import "../../pages/Search/styles.css"
+import "../Search/style.css"
 
 function Search() {
   // Setting our component's initial state
@@ -56,8 +56,8 @@ function Search() {
         <Row>
           <div className="hero">
             <Jumbotron>
-              <h1>Google Books Search</h1>
-              <h5>from Google Books API</h5>
+              <h1>Google Book Search</h1>
+              <h5>Uses Google Books API</h5>
             </Jumbotron>
           </div>
           <Col size="md-12">
@@ -66,7 +66,7 @@ function Search() {
                 onChange={handleInputChange}
                 name="title"
                 style={{ textAlign: "center", backgroundColor: "rgb(232,240,254)" }}
-                placeholder='For example, "Catcher In The Rye"'
+                placeholder='Ex: "Lord of the Rings"'
               />
               <FormBtn
                 style={{ textAlign: "center", backgroundColor: "rgb(232,240,254)" }}

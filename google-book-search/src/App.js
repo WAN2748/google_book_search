@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Search from "./pages/Search/search";
-import Saved from "./pages/Saved/saved";
-import NoMatch from "./pages/NoMatch/nomatch";
-import Nav from "./components/Nav";
+import Saved from "./pages/Save";
+import NoMatch from "./pages/NoMatch/noMatch";
+import Nav from "./componets/Nav";
 
-import "./app.css"
+import "./"
 
 function App() {
   return (
