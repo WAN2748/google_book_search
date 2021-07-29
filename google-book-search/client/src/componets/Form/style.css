@@ -1,0 +1,57 @@
+h1 {
+    color: white;
+}
+
+h5 {
+    color: #454545;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 600px) {
+    form {
+        width: 40%;
+        max-width: 500px;
+    }
+}
+
+form .form-group {
+    margin: 0;
+    width: 100%;
+}
+
+form .form-group input {
+    border-radius: 24px 0 0 24px;
+    width: 100%;
+}
+
+form .btn {
+    border-radius: 0 24px 24px 0;
+    background-color: #00f421;
+    border-color: #00f421;
+}
+
+form .btn i {
+    margin: 0 1em;
+    background-color: #00f421;
+}
+
+.btn-success {
+    background-color: #00f421;
+    border-color: #00f421;
+    color: #454545;
+}
+
+.btn-success:hover {
+    background-color: #00f421;
+    border-color: #00f421;
+    color: white;
+}
+
+.form-control {
+    box-shadow: none; /* Removes blue halo */
+}
